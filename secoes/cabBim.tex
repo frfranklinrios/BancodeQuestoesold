@@ -1,0 +1,44 @@
+% Especificações da prova
+
+\newcommand{\orgao}{Secretaria da Educação do Estado do Ceará - SEDUC/CE}
+\newcommand{\escola}{EEM Professora Francisca Linhares de Sousa}
+\newcommand{\disciplina}{Física}
+\newcommand{\professor}{Franklin Rios}
+\newcommand{\prova}{Avaliação Bimestral} %Ex.: Avaliação Parcial, Bimestral ...
+
+
+\newcommand{\logofl}{\includegraphics[width=2.5cm]{secoes/imagens/LogoFL.pdf}}
+\newcommand{\logogov}{\includegraphics[width=3cm]{secoes/imagens/LogoGov2.pdf}}
+
+\begin{minipage}[c][1.8cm][c]{7cm}\hspace{-2cm}
+	
+%Tabela Cabeçalho
+\hspace{-1.5cm}
+\fbox{\fbox{\parbox{19.5cm}{\centering {
+\hspace{-.1cm}
+\begin{tabular}{lllrll}\hspace{.5cm}
+	\\
+\multirow{3}{*}{\logofl} \hspace{1cm} & \multicolumn{4}{l}{\textbf{\escola}}                           &\hspace{.1cm} \multirow{3}{*}{\logogov} \\
+                         & \textbf{Disciplina: }& \disciplina & \textbf{Professor: } & \professor &                   \\
+                         & \textbf{Série: }      & \serie      &  \textbf{Data: } & \data   \vspace{.3cm}    &         \\
+\multicolumn{6}{c}{\large \textbf{\prova}}  \vspace{.5cm}\\
+\multicolumn{5}{l}{\large \textbf{\hspace{.3cm}Aluno:\rule{12cm}{.3mm}}} & \multicolumn{1}{l}{\large \textbf{Turma:\rule{2cm}{.3mm}}}                         
+\end{tabular}
+}}}}
+
+\end{minipage} 
+
+\vspace{2cm}
+
+%=========================================================
+%------------Cabeçalho da Segunda página
+%=========================================================
+
+\pagestyle{headandfoot}%{head}%empty
+\firstpageheader{}{}{}
+\runningheader{\prova}{}{\disciplina}
+\runningheadrule
+\firstpagefooter{}{}{}
+\runningfooter{}{Boa Prova!}{Pág. \thepage\ de \numpages}
+\runningfootrule
+%========================================================

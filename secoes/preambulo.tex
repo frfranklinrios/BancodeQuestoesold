@@ -1,0 +1,98 @@
+\documentclass[a4paper,12pt]{exam}
+
+%PACOTES
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{pgfkeys}
+\usepackage{svg}
+%\usepackage[siunitx, RPvoltages]{circuitikz}
+%\usemodule[circuitikz]
+ 
+%FONTES-------------------------------------------------
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%\usepackage{gfsartemisia-euler}
+%\renewcommand{\familydefault}{pzc}
+%-------------------------------------------------------
+
+\usepackage[onehalfspacing]{setspace}
+\usepackage{fourier}
+\usepackage[lmargin=1.9cm,rmargin=1.6cm,tmargin=2cm,bmargin=3cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{amsmath,amssymb}%Expressoes matem�ticas e s�mbolos
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\usepackage{multicol}% M�ltiplas colunas
+\usepackage{multirow}% permite mesclar c�lulas de modo horizontal
+\usepackage{array}%para tabelas
+\usepackage{ragged2e}%alinhamento
+\usepackage{graphicx}%Para inserir imagens
+\usepackage{pdflscape}%Permite mudar a orientacao da pagina
+\usepackage{epstopdf} %converte figs eps em figs pdf
+\usepackage{booktabs}%tabelas
+\usepackage{pdfpages}%Permite incluir arquivos pdf
+\usepackage[sort&compress,square,comma, authoryear]{natbib}%Referencias
+\usepackage[colorlinks=true,urlcolor=magenta,citecolor=red,linkcolor=blue,bookmarks=true]{hyperref}%Links e cita��es
+\usepackage{enumerate}%enumeracao
+\usepackage{enumitem}%enumeracao
+\usepackage{pgf}
+\usepackage{pgfpages}%Bordas das p�ginas
+\usepackage[
+    per-mode=fraction,
+    quotient-mode=fraction,
+    ]{siunitx}
+\usepackage{import}
+\usepackage{color,xcolor}
+\usepackage{cancel}
+\usepackage{fancybox}
+
+%CONFIGURA��ES DA CLASSE EXAM
+
+\renewcommand{\thequestion}{\bf \arabic{question}}
+\pointpoints{ponto}{pontos}
+\pointformat{\bf \small (\thepoints)}
+\renewcommand{\choicelabel}{\bf \thechoice)}
+\renewcommand{\solutiontitle}{{\bf Resposta: \enspace}}
+
+\CorrectChoiceEmphasis{\color{red} \bf}
+\SolutionEmphasis{\small \color{red}}
+
+\everymath{\displaystyle} %deixa as equa��es do mesmo tamanho da letra normal
+\addpoints %Necess�rio para exibir pontua��o no cabe�alho
+\sisetup{output-decimal-marker = {,}}
+
+%BORDA DA P�GINA
+\pgfpagesdeclarelayout{boxed}
+{
+	\edef\pgfpageoptionborder{3pt}
+}
+{
+	\pgfpagesphysicalpageoptions
+	{%
+		logical pages=1,%
+	}
+	\pgfpageslogicalpageoptions{1}
+	{
+		border code=\pgfsetlinewidth{0.5mm}\pgfstroke,%
+		border shrink=\pgfpageoptionborder,%
+		resized width=.95\pgfphysicalwidth,%
+		resized height=.95\pgfphysicalheight,%
+		center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+	}%
+}
+\pgfpagesuselayout{boxed}
+\setlength{\parindent}{.1cm}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
